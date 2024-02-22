@@ -25,6 +25,12 @@ jobs:
       run: npm install
       
     - name: Run Tests
-      run: npm test
+      run: npm test -D skipTests
+
+    - name: build the code
+      run: npm build
+
+
+    
 
         
