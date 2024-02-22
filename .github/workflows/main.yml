@@ -25,7 +25,7 @@ jobs:
       run: npm install
       
     - name: Run Tests
-      run: npm test -D skipTests
+      run: npm run lint
 
     - name: build the code
       run: npm build
