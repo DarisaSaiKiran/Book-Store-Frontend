@@ -1,0 +1,17 @@
+name: Test Project
+on:
+ push:
+jobs:
+   testing:
+     runs-on: ubuntu-latest
+     steps:
+      - name: checkout the code
+        uses: action/checkout@v3
+      - name: installing nodeJS
+        uses: action/setup-node@v3
+      - name: install the dependencies
+        run: npm install
+      - name: run test
+        run: npm test
+      
+        
